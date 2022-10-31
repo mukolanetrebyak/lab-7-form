@@ -1,0 +1,28 @@
+<html>
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<form>
+<h1>Вхід</h1>
+  <div>
+    <input type="text" id="myInput"  name="i_like" required minlength="3" maxlength="25" placeholder="Логін">
+  </div>
+    <div>
+    <input type="email" id="myInput"  name="NPassword" required  placeholder="Електронна пошта">
+  </div>
+    <div>
+    <input type="password" id="myPassword"  name="RNPassword" required minlength="8" maxlength="25"pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" required placeholder="Пароль">
+  </div>
+    <div>
+    <input type="password" id="myPasswordR"  name="i_like" required minlength="3" maxlength="25"  placeholder="Підтвердження паролю" onChange="isPasswordMatch();" />
+  </div>
+  <div>
+    <button>Увійти</button>
+	<a href="#" class="forget" onclick="myFunction()">Показати паролі</a>
+  </div>
+</form>
+</body>
+</html>
